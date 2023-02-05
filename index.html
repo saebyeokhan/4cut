@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+        body {
+            font-family: "LeeSeoyun";
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-image: url("./background.png");
+          }
+        .container {
+          width: 390px;
+          background-color: #ff9d73;
+          height: 100%;
+        }
+        .photos {
+          margin-top: 30px;
+        }
+        .photo-frame {
+          background-color: white;
+          margin: 15px 20px;
+          height: 200px;
+          background-size: contain;
+          position: relative;
+
+        }
+        .footer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .f-title{
+          color: white;
+          font-size:25px;
+          font-weight: 900;
+        }
+        .f-date {
+          color: white;
+          font-size: 15px;
+          font-weight: 900;
+        }
+
+        #image1 {
+          background-image: url('./A8C68C36-7239-40D7-A3D9-C481F318F1D9_1_102_o.jpeg');
+        }
+        #image2 {
+          background-image: url('./C0F7B908-5C8D-459E-A52B-4073C1C417A8_1_105_c.jpeg');
+        }
+        #image3 {
+          background-image: url('./D1241B1A-43F1-4274-9019-10054247C361_1_105_c.jpeg');
+        }
+        #image4 {
+          background-image: url('./DDA891BF-8CFE-4566-B467-2BF484BC58FF_1_105_c.jpeg');
+        }
+        .photo_description {
+          color: white;
+          background-color: black;
+
+          width:max-content;
+          margin-bottom: 10px;
+          padding: 0 20px;
+          border-radius: 10px;
+          position: absolute;
+
+          transform: translate(-50%);
+          left: 50%;
+          bottom: 0;
+        }
+</style>
+<body>
+  <div class="container">
+    <div class="photos">
+      <div id="image1" class="photo-frame">
+        <span id="desc1" class="photo_description">벌써 추억이 된 조개술찜..</span>
+      </div>
+      <div id="image2" class="photo-frame">
+        <span id="desc2" class="photo_description">마르지엘라 재밌었엉..?</span>
+      </div>
+      <div id="image3" class="photo-frame">
+        <span id="desc3" class="photo_description">귀요미 두마리</span>
+      </div>
+      <div id="image4" class="photo-frame">
+        <span id="desc4" class="photo_description">몰 바 쟈기 ㅎ</span>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="f-title">Happy Lunch Time</p>
+      <p class="f-date">2023.02.05</p>
+    </div>
+  </div>
+</body>
+</html>
